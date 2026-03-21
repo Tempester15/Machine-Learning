@@ -1,6 +1,8 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
+import os
+
 
 class scrape:
   def __init__(self, url):
@@ -62,3 +64,5 @@ class scrape:
     countries_data.update({"Area (sq. Km)" : countries_areas})
 
     return pd.DataFrame(countries_data)
+
+
